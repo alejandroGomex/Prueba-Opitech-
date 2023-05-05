@@ -1,0 +1,37 @@
+SELECT COUNT(DISTINCT id)
+FROM Cliente
+JOIN Viaje ON Cliente.id = Viaje.id
+WHERE Viaje.precio > 5000000;
+
+SELECT * From Cliente 
+JOIN Pagos ON Cliente.id = Pagos.id 
+WHERE Pagos.forma_pago = "efectivo"
+
+SELECT *
+FROM Cliente
+WHERE edad <= DATEADD(year, -40, GETDATE()) AND ciudad_residencia = "Bogotá";
+ 
+SELECT opciones 
+FROM Viaje
+JOIN Pagos ON Cliente.id = Pagos.id
+JOIN Viaje ON Cliente.id = Viaje.id
+WHERE forma_pago = "tarjeta_credito" AND opciones = "Turisticos"
+
+SELECT opciones 
+FROM Viaje
+JOIN Pagos ON Cliente.id = Pagos.id
+JOIN Viaje ON Cliente.id = Viaje.id
+WHERE forma_pago = "tarjeta_credito" AND opciones = "Negocios"
+
+
+SELECT * 
+FROM Reservas
+WHERE estado = "activo"
+
+
+SELECT * 
+FROM Reservas
+WHERE estado = "inactivo"
+
+
+ 

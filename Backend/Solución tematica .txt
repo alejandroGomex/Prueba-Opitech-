@@ -1,0 +1,6 @@
+Para la solución de la prueba de backend me fije mas que todo en los requerimientos que el texto decía ya que en de ahí Salen las 5 tablas principales y su relación entre ellas otro elemento importante a destacar fue que cada algunas tablas tenia su interfaz enum como por ejemplo la clase pagos, en la clase pagos se implementaba esta interfaz para saber como era el elemento de pago si era tarjeta debito, crédito etc; en la clase Reservas teníamos otra interfaz enum para saber si la reserva del usuario seguía activa o si ya simplemente se había cancelado y la clase viaje por si se quería especificar si era un viaje turístico o de negocios.
+
+Para la parte del front end lo que hice fue una interfaz sencilla pero intuitiva de utilizar para el usuario lo que hice fue que utilice una api de usuarios la cual me permitiera cumplir con los requerimientos de la prueba la solución entonces fue permitirle al usuario que escribiera en la parte del filtro y lo que hace el programa es ir adaptando la tabla dependiendo de los caracteres que el usuario fuera ingresando para resolver esta prueba me guié de la documentación de angular a continuación dejare los links de donde me ayude para resolver este ejercicio 
+Links: 
+https://material.angular.io/components/table/examples
+https://www.angularjswiki.com/material/checkbox/#mat-checkbox-example

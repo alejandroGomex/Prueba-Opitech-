@@ -1,0 +1,102 @@
+//Este programa es un acercamiento al funcionamiento principal del sistema completo
+
+Funcion cliente <- creacionCliente (  )
+	
+	definir id,cedula,correo,nombre,telefono,apellido,ciudadResidencia,edad,reserva,pago,preferencia Como Caracter
+	
+	dimension cliente[10]
+	
+	leer id,cedula,correo,nombre,telefono,apellido,ciudadResidencia,edad,reserva,pago,preferencia
+	
+	cliente[1] = id
+	
+	cliente[2] = cedula
+	
+	cliente[3] = correo
+	
+	cliente[4] = nombre
+	
+	cliente[5] = apellido
+	
+	cliente[6] = ciudadResidencia
+	
+	cliente[7] = edad
+	
+	cliente[8] = reserva
+	
+	cliente[9] = pago
+	
+	cliente[10] = preferencia
+
+	
+Fin Funcion
+
+
+
+//Este metodo lee el viaje que el cliente selecciono y lo que devuelve es un viaje seleccionado
+
+
+Funcion  Viaje<- ConsultaViajes ( )
+	
+	definir viajeSeleccionado Como Entero
+	
+	Para i<-1 Hasta 10 Con Paso 1 Hacer //En este caso el ciclo va hasta 10 como ejemplo, pero debe ir hasta el numero de viajes que hayan
+		
+		Escribir "Viaje #",i;
+		
+	Fin Para
+	
+	leer viajeSeleccionado
+	
+Fin Funcion
+
+
+
+// este metodo lo que hace es almacenar y leer los datos y las preferencias del usuario accediendo a ellas mediante el id, y posteriormente lo que hace es guardalas en la base de datos
+Funcion Preferencias <- almacenaPreferencias (  )
+	
+	Definir valorMaximo,valorMinimo,ciudadDestino,ciudadSalida,id Como Caracter
+	
+	Dimension preferencia[5] 
+	
+	leer id 
+	preferencia[1]= id 
+	
+	leer valorMaximo
+	
+	preferencia[2] =  ciudadDestino
+	
+	leer valorMinimo 
+	
+	preferencia[3] = ciudadSalida
+	
+	leer ciudadDestino
+	
+	preferencia[4] = valorMaximo
+	
+	leer ciudadSalida 
+	
+	preferencia[5] = valorMinimo
+	
+Fin Funcion
+
+
+
+
+
+Algoritmo pruebaTecnica
+	
+	definir cliente como caracter
+	
+	cliente = creacionCliente
+	
+	definir viaje Como Entero
+	
+	Viaje = ConsultaViajes
+	
+	definir preferencia como Caracter
+	
+	Preferencias = almacenarPreferencias
+	
+FinAlgoritmo
+
